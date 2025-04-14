@@ -90,7 +90,3 @@ If the launcher doesn't work as expected, try the following:
 1. Ensure the path to the original application is correct
 2. Check if the application is actually an Electron application
 3. Try running the application directly from the terminal with the `--use-angle=gl` argument to see if it resolves the issue
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
