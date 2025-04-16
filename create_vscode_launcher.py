@@ -103,7 +103,7 @@ def create_app_bundle(app_name="VS Code with OpenGL", app_path=None):
     <key>CFBundleExecutable</key>
     <string>{app_name}</string>
     <key>CFBundleIconFile</key>
-    <string>Code_GL.icns</string>
+    <string>code_gl.icns</string>
     <key>CFBundleIdentifier</key>
     <string>com.user.{app_name.replace(" ", "")}</string>
     <key>CFBundleName</key>
@@ -132,7 +132,7 @@ open "/Applications/Visual Studio Code.app" --args --use-angle=gl
     os.chmod(executable_path, 0o755)
 
     # Copy the icon file
-    shutil.copy("./Code_GL.icns", resources_dir)
+    shutil.copy("./icons/code_gl.icns", resources_dir)
 
     print(f"Application '{app_name}.app' created successfully at '{app_path}'.")
     print(f"You can now double-click '{app_name}.app' to launch VS Code with OpenGL rendering.")
